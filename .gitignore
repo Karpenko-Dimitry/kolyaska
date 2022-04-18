@@ -1,0 +1,4 @@
+/upload/images/category/*
+/upload/images/product/*
+/.idea
+/config/db_params.php

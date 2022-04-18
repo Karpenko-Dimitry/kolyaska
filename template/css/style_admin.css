@@ -1,0 +1,154 @@
+body {
+    font: 400 14px/20px 'Roboto Slab', sans-serif;
+    color: #696c6f;
+    min-height: 100vh;
+    background: #fafcfe;
+}
+
+header {
+    background: #acb4bb;
+}
+
+header a {
+    color: white;
+}
+
+a {
+    color: #696c6f;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 350px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+.attribute img {
+    width: 100px;
+}
+
+input, textarea {
+    width: 50%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px #696c6f solid;
+    text-align: center;
+}
+
+i {
+    text-align: center;
+}
+
+ta
+.errors {
+    color: red;
+    margin-left: 50px;
+}
+
+img {
+    width: 250px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+label {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+}
+
+#submit {
+    width: 150px;
+    background: #fedb29;
+    margin: 20px auto;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fedb29;
+    margin: 20px auto;
+    box-shadow: #acb4bb 10px 10px 10px;
+}
+
+.botton-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input, select {
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 90%;
+}
+
+@media (min-width: 800px) {
+    td, th {
+        max-width: 50px;
+    }
+
+    label {
+        width: 50%;
+    }
+
+    input, select {
+        width: 50%;
+    }
+
+    textarea {
+        width: 50%;
+    }
+
+    .attribute img {
+        width: 250px;
+    }
+
+}
