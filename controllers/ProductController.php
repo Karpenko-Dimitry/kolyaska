@@ -79,6 +79,11 @@ class ProductController extends ProductBase
         $commonData = CommonModel::getCommondata();
         $categoryList = CategoryModel::getCategoryList();
         $category = CategoryModel::getCategoryByUrl($category_url);
+
+        if (!$category) {
+            return null;
+        }
+
         $categoryId = $category['id'];
         $minUsdPriceinCat = ProductModel::minPriceByCategory($categoryId);
         $minUahPriceinCat = Exchange::exchangePrice($minUsdPriceinCat);
