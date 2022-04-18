@@ -11,8 +11,8 @@ class SiteController
         $commonData = CommonModel::getCommondata();
         $categoryList = CategoryModel::getCategoryList();
         $recommendedCategories = CategoryModel::getRecommendedCategory();
-        $title = 'Прокат, аренда детских товаров в г. Одесса тел:0976164343 | КОЛЯСКА.УКР';
-        $description = 'Прокат колясок, детских весов, фотолампы от желтушки, шезлонги, манежи тел. 0976164343';
+        $title = 'Прокат, аренда детских товаров в г. Одесса | КОЛЯСКА.УКР';
+        $description = 'Прокат колясок, детских весов, фотолампы от желтушки, шезлонги, манежи';
 
         if (CartModel::getProducts()) {
             $productsInCart = CartModel::getProducts();
