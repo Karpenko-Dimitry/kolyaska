@@ -231,7 +231,7 @@ class ProductModel
         $query = "INSERT INTO products
               (type, name, url, category_id, code, price, period, presale_price, description1, description2, short_description, image, availability, is_new, is_sale, is_recommended, status)
               VALUES
-              (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+              (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
               ";
         $STH = $PDO->prepare($query);
         $STH->setFetchMode(PDO::FETCH_ASSOC);
