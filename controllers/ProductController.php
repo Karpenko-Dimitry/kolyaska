@@ -43,6 +43,9 @@ class ProductController extends ProductBase
         }
 
         $productItem = ProductModel::getProductItemByUrl($url);
+        if (!$productItem) {
+            return null;
+        }
         $categoryId = $productItem['category_id'];
         $productId = $productItem['id'];
         $attributeList = AttributeModel::getAttributeListByProduct($productId);

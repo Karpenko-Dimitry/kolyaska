@@ -19,7 +19,7 @@ class ErrorController
         } else {
             $totalPrice = 0;
         }
-
+        http_response_code(404);
         $categoryList = CategoryModel::getCategoryList();
         require_once(ROOT . '/views/site/error.php');
 
