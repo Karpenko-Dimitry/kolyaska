@@ -1,0 +1,23 @@
+{
+  "name": "kolyaska",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@github/markdown-toolbar-element": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karpenko-Dimitry/kolyaska.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karpenko-Dimitry/kolyaska/issues"
+  },
+  "homepage": "https://github.com/Karpenko-Dimitry/kolyaska#readme"
+}

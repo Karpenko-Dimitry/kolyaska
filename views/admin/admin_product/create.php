@@ -52,8 +52,16 @@
         <?php endif; ?>
             </p>
             <p>
-                <label for="description1">Описание1</label>
-                <textarea id="description1" name="description1" cols="30" rows="10"></textarea>
+                <markdown-toolbar for="desc1">
+                    <md-bold class="btn btn-sm"><i class="fas fa-bold"></i></md-bold>
+                    <md-header level="2" class="btn btn-sm"><i class="fas fa-heading"></i></md-header>
+                    <md-italic class="btn btn-sm"><i class="fas fa-italic"></i></md-italic>
+                    <md-unordered-list class="btn btn-sm"><i class="fas fa-list"></i></md-unordered-list>
+                    <md-ordered-list class="btn btn-sm"><i class="fas fa-list-ol"></i></md-ordered-list>
+                    <md-image class="btn btn-sm">image</md-image>
+                    <md-link class="btn btn-sm"><i class="fas fa-link"></i></md-link>
+                </markdown-toolbar>
+                <textarea name="description1" cols="30" rows="10" class="mt-3 width-full" id="desc1"></textarea>
             </p>
             <p>
                 <label for="description2">Описание2 (таблица тех.характеристик)</label>
@@ -99,3 +107,5 @@
     </div>
 
 <?php require_once(ROOT . '/views/layouts/admin_footer.php') ?>
+<script src="../../../../node_modules/@github/markdown-toolbar-element/dist/index.js" type="module"></script>
+

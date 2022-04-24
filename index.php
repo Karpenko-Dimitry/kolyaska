@@ -13,7 +13,7 @@ require_once(ROOT.'/components/Autoload.php');
 // require_once(ROOT.'/components/Router.php'); - теперь автолоудер подключает эти файлы автоматом
 // require_once(ROOT.'/components/Db.php'); - теперь автолоудер подключает эти файлы автоматом
 //3. Подключение к БД
-
+require_once(ROOT.'/vendor/autoload.php');
 //4. Запуск Роутера
 
 $router = new Router();

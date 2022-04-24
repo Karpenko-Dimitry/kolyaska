@@ -31,6 +31,7 @@ class ProductController extends ProductBase
     {
         $commonData = CommonModel::getCommondata();
         $categoryList = CategoryModel::getCategoryList();
+        $parsedown = new Parsedown();
 
         if (CartModel::getProducts()) {
             $productsInCart = CartModel::getProducts();
@@ -66,9 +67,6 @@ class ProductController extends ProductBase
             $corssProdList[] = $productList[$id];
         }
 
-        if (isset($productItem) && !empty($productItem)) {
-            $productItem['description1'] = preg_replace('/\n/', '<br>', $productItem['description1']);
-        }
         require_once(ROOT . '/views/product/view.php');
 
         return true;

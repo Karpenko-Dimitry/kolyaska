@@ -134,7 +134,7 @@
                 <div class="details-item">
                     <div class="good-description">
                         <p>
-                            <?php echo $productItem['description1']; ?>
+                            <?php echo $parsedown->text($productItem['description1']); ?>
                         </p>
                     </div>
                 </div>
