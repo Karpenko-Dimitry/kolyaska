@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="details-item">
+                <div class="details-item align-start">
                     <div class="good-description">
                         <table>
                             <?php foreach (explode("\r\n", $productItem['description2']) as $row) : ?>

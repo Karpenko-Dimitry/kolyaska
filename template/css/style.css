@@ -60,6 +60,10 @@ nav ul {
     padding: 0 20px;
 }
 
+.good-details .container {
+    flex-direction: column-reverse;
+}
+
 .cover {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -1389,7 +1393,9 @@ footer .widget {
 .good-details .good-description h2 {
     margin-bottom: 25px;
 }
-
+.align-start {
+    align-self: flex-start;
+}
 .good-description p {
     margin-bottom: 20px;
     line-height: 1.5;
@@ -1869,6 +1875,9 @@ footer .widget {
 }
 
 @media (min-width: 900px) {
+    .good-details .container {
+        flex-direction: row;
+    }
     .box {
         top: 50%;
         width: 1000px;
