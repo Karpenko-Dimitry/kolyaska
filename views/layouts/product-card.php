@@ -60,7 +60,7 @@
         <?php endif ?>
 
         <h2>
-            <?php echo $productItem['type']; ?><br> <?php echo $productItem['name']; ?>
+            <?php echo $productItem['type']; ?> в прокат<br> <?php echo $productItem['name']; ?>
         </h2>
     </a>
     <div class="btn-more_yellow">

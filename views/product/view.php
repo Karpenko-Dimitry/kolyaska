@@ -81,7 +81,7 @@
 
                         <div class="title-item">
                             <h1>
-                                <?php echo $productItem['type']; ?> <br> <?php echo $productItem['name']; ?>
+                                <?php echo $productItem['type']; ?> в прокат <br> <?php echo $productItem['name']; ?>
                                 <div class="color-name">
 
                                 </div>
@@ -142,7 +142,13 @@
                 <div class="details-item">
                     <div class="good-description">
                         <table>
-                            <?php echo $productItem['description2']; ?>
+                            <?php foreach (explode("\r\n", $productItem['description2']) as $row) : ?>
+                                <tr>
+                                    <?php foreach (explode("_*_", $row) as $data) : ?>
+                                        <td><?php echo $data; ?></td>
+                                    <?php endforeach; ?>
+                                </tr>
+                            <?php endforeach; ?>
                         </table>
                     </div>
                 </div>
@@ -150,7 +156,7 @@
         </div>
         <div class="container">
             <?php if ($corssProdList): ?>
-                <h1 id="new-products">Популярные товары интернет магазина колясок</h1>
+                <h1 id="new-products">Популярные товары сервиса проката | КОЛЯСКА.УКР</h1>
             <?php endif; ?>
             <div class="catalog-items">
                 <?php foreach ($corssProdList as $productItem): ?>
