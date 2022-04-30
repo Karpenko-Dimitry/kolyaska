@@ -27,7 +27,7 @@
     <?php foreach ($categories as $category): ?>
         <url>
             <loc>https://xn--80atadot1h.xn--j1amh/products/category/<?= $category['url'] ?>/</loc>
-            <lastmod><?= date('Y-m-dTH:i:sP', strtotime($category['updated_at'])) ?></lastmod>
+            <lastmod><?= date('Y-m-d\TH:i:sP', strtotime($category['updated_at'])) ?></lastmod>
             <changefreq>daily</changefreq>
             <priority>0.9</priority>
         </url>
@@ -35,7 +35,7 @@
     <?php foreach ($products as $product): ?>
         <url>
             <loc>https://xn--80atadot1h.xn--j1amh/products/<?= $product['url'] ?>/</loc>
-            <lastmod><?= date('Y-m-dTH:i:sP', strtotime($product['updated_at'])) . $product['id'] ?></lastmod>
+            <lastmod><?= date('Y-m-d\TH:i:sP', strtotime($product['updated_at'])) . $product['id'] ?></lastmod>
             <changefreq>daily</changefreq>
             <priority>0.9</priority>
         </url>

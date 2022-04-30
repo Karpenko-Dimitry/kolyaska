@@ -66,7 +66,7 @@ class ProductModel
         $PDO = Db::getConnection();
         $query = "SELECT * 
               FROM products
-              WHERE url = ?               
+              WHERE status = 1 and url = ?               
              ";
         $STH = $PDO->prepare($query);
         $STH->setFetchMode(PDO::FETCH_ASSOC);
