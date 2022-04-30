@@ -35,7 +35,7 @@
     <?php foreach ($products as $product): ?>
         <url>
             <loc>https://xn--80atadot1h.xn--j1amh/products/<?= $product['url'] ?>/</loc>
-            <lastmod><?= date('Y-m-d\TH:i:sP', strtotime($product['updated_at'])) . $product['id'] ?></lastmod>
+            <lastmod><?= date('Y-m-d\TH:i:sP', strtotime($product['updated_at'])) ?></lastmod>
             <changefreq>daily</changefreq>
             <priority>0.9</priority>
         </url>
