@@ -33,7 +33,7 @@
         <meta property="og:type" content="product"/>
         <meta property="og:locale" content="ru-UA"/>
         <meta property="og:site_name" content="<?php echo $commonData['site_name']; ?>"/>
-        <meta property="og:title" content="ᐉ <?php echo $productItem['name'] . ' ' . $productItem['type']; ?>"/>
+        <meta property="og:title" content="ᐉ Прокат <?php echo $productItem['name'] . ' в Одессе ☎' . $commonData['phone1']; ?>"/>
         <meta property="og:description"
               content="✅ <?php echo $productItem['short_description']; ?> ☎<?php echo $commonData['phone1'] ?>"/>
         <meta property="og:url" content="<?php echo $commonData['dom'] . $_SERVER['REQUEST_URI']; ?>"/>
@@ -43,7 +43,7 @@
               content="<?php echo Exchange::exchangePriceNoformat($productItem['price']); ?>"/>
         <meta property="og:price:currency" content="UAH"/>
     <?php elseif (isset($category)): ?>
-        <title>ᐉ <?php echo $category['name'] ?> от <?= $minUahPriceinCat ?> грн. в сервисе проката
+        <title>ᐉ <?php echo $category['name'] ?> от <?= $minUahPriceinCat ?> грн.
             ☎<?php echo $commonData['phone1'] ?></title>
         <meta name="description"
               content="✅ <?php echo $category['short_description'] ?> ☎<?php echo $commonData['phone1'] ?>">
@@ -51,7 +51,7 @@
         <meta property="og:locale" content="ru-UA"/>
         <meta property="og:site_name" content="<?php echo $commonData['site_name']; ?>"/>
         <meta property="og:title"
-              content="ᐉ <?php echo $category['name'] ?> от <?= $minUahPriceinCat ?> грн. в сервисе проката ☎<?php echo $commonData['phone1'] ?>"/>
+              content="ᐉ <?php echo $category['name'] ?> от <?= $minUahPriceinCat ?> грн. в Одессе ☎<?php echo $commonData['phone1'] ?>"/>
         <meta property="og:description"
               content="✅ <?php echo $category['short_description'] ?> ☎<?php echo $commonData['phone1'] ?>"/>
         <meta property="og:url" content="<?php echo $commonData['dom'] . $_SERVER['REQUEST_URI']; ?>"/>
