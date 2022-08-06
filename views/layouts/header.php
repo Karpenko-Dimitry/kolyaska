@@ -80,6 +80,7 @@
     <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
     <link rel="stylesheet" href="/template/css/normalize.css">
     <link rel="stylesheet" href="/template/css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
 
 </head>
 <body>
@@ -166,7 +167,7 @@
                              height="48">
                             <path d="M10.750,0.750 L118.750,4.750 C124.273,4.750 128.750,9.227 128.750,14.750 L129.750,34.750 C129.750,40.273 125.273,44.750 119.750,44.750 L15.750,45.750 C10.227,45.750 5.750,41.273 5.750,35.750 L0.750,10.750 C0.750,5.227 5.227,0.750 10.750,0.750 Z"></path>
                         </svg>
-                        <span><a href="/#promo"><i class="fas fa-gift"></i> Акция</a></span>
+                        <span><a href="/#promo"><span class="mdi mdi-gift"></span> Акция</a></span>
                     </div>
 
                     <div class="widget-callback">
@@ -181,7 +182,8 @@
                     <a href="/cart/">
                         <div class="widget-cart">
                             <div class="cart">
-                                <i class="fas fa-shopping-bag"></i>
+                                <span class="mdi mdi-cart"></span>
+
                                 <div class="purchase" id="cart-count">
                                     <?php echo CartModel::countItems(); ?>
                                 </div>
@@ -202,9 +204,9 @@
                             <path d="M119.750,0.750 L11.750,4.750 C6.227,4.750 1.750,9.227 1.750,14.750 L0.750,34.750 C0.750,40.273 5.227,44.750 10.750,44.750 L114.750,45.750 C120.273,45.750 124.750,41.273 124.750,35.750 L129.750,10.750 C129.750,5.227 125.273,0.750 119.750,0.750 Z"></path>
                         </svg>
                         <?php if (isset($_SESSION['user'])): ?>
-                            <span><a href="/cabinet/"><i class="fas fa-unlock"></i> Вход</a></span>
+                            <span><a href="/cabinet/"><span class="mdi mdi-lock-open"></span> Вход</a></span>
                         <?php else: ?>
-                            <span><a href="/user/login/"><i class="fas fa-unlock"></i> Вход</a></span>
+                            <span><a href="/user/login/"><span class="mdi mdi-lock-open"></span> Вход</a></span>
                         <?php endif; ?>
                     </div>
                 </div>

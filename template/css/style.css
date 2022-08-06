@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
-.btn-more_yellow a, .goods-price .value, .label span, .widget-promo span, .widget-login span, .main-menu > ul > li > a, .col-left .btn-more a, .col-right .price-from span, .best-seller .price span, .best-seller .btn-more a, .catalog li a, .footer-back .btn-back a, .title-price p {
+.btn-more_yellow a, .goods-price .value, .label span, .widget-promo > span, .widget-login > span, .main-menu > ul > li > a, .col-left .btn-more a, .col-right .price-from span, .best-seller .price span, .best-seller .btn-more a, .catalog li a, .footer-back .btn-back a, .title-price p {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -354,7 +354,7 @@ nav ul {
     padding: 12px 22px;
 }
 
-.widget-promo i {
+.widget-promo .mdi {
     color: #4d86bb;
     margin-right: 5px;
     font-size: 20px;
@@ -370,7 +370,7 @@ nav ul {
     transition: 0.5s;
 }
 
-.widget-promo:hover i {
+.widget-promo:hover .mdi {
     color: white;
     transition: 0.5s;
 }
@@ -475,7 +475,7 @@ header .widget-callback {
     color: white;
 }
 
-.widget-cart .cart i {
+.widget-cart .cart .mdi {
     line-height: 60px;
     font-size: 30px;
 }
@@ -484,7 +484,7 @@ header .widget-callback {
     background: #4d86bb;
 }
 
-.widget-cart .cart:hover a {
+.widget-cart .cart:hover .mdi {
     color: white;
 }
 
@@ -523,7 +523,7 @@ header .widget-callback {
     stroke: #fedb29;
 }
 
-.widget-login span {
+.widget-login > span {
     white-space: nowrap;
     font-weight: 700;
     color: white;
@@ -533,7 +533,7 @@ header .widget-callback {
     padding: 12px 22px;
 }
 
-.widget-login i {
+.widget-login .mdi {
     color: #fedb29;
     margin-right: 5px;
     font-size: 20px;
@@ -549,8 +549,8 @@ header .widget-callback {
     transition: 0.5s;
 }
 
-.widget-login:hover i {
-    color: #696c6f;
+.widget-login:hover .mdi {
+    color: white;
     transition: 0.5s;
 }
 
