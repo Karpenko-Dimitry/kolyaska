@@ -76,11 +76,11 @@
 
 </footer>
 
+<script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="/template/js/slider.js"></script>
 <script src="/template/js/modal.js"></script>
 <script src="/template/js/goods.js"></script>
 <script src="/template/js/validate.js"></script>
-<script src="/template/js/jquery-3.4.1.js"></script>
 <script>
     $(document).ready(function () {
         $(".add-to-cart").click(function () {
