@@ -80,7 +80,7 @@
     <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">-->
     <link rel="stylesheet" href="/template/css/normalize.css">
     <link rel="stylesheet" href="/template/css/animate.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="/node_modules/@mdi/font/css/materialdesignicons.min.css">
 
 </head>
 <body>
